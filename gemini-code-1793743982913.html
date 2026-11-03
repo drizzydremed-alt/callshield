@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallShield Senior - Official Spam Protection & National Registry</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .focus-ring:focus { outline: 4px solid #D97706; outline-offset: 2px; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- Top Accessibility & Helpline Banner -->
+    <div class="bg-gray-900 text-white py-2.5 px-4 text-center text-sm md:text-base font-medium border-b border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <span><i class="fa-solid fa-phone-volume text-red-500 mr-2"></i>Senior Helpline: <strong>1-800-555-SHIELD</strong> (Mon–Fri 8am–8pm EST)</span>
+            <span class="bg-red-700 text-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">AARP-Inspired Trust Standard</span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white border-b-2 border-red-600 sticky top-0 z-40 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-red-600 text-white p-2.5 rounded-lg shadow-sm">
+                    <i class="fa-solid fa-shield-halved text-2xl md:text-3xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl md:text-3xl font-black text-red-700 tracking-tight">CallShield</span>
+                    <span class="block text-xs font-bold text-gray-500 tracking-widest uppercase">Senior Protection Services</span>
+                </div>
+            </div>
+            
+            <nav class="hidden lg:flex items-center space-x-8 text-lg font-bold text-gray-700">
+                <a href="#how-it-works" class="hover:text-red-700 transition">How It Works</a>
+                <a href="#pricing" class="hover:text-red-700 transition">Pricing</a>
+                <a href="#evaluator" class="hover:text-red-700 transition">Spam Evaluator</a>
+                <a href="#careers" class="hover:text-red-700 transition text-red-600">Careers / Brokers</a>
+            </nav>
+
+            <button onclick="openModal()" class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-lg px-6 py-3 rounded-lg shadow-lg focus-ring transition flex items-center space-x-2">
+                <span>Start Protection</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-red-50 via-white to-gray-50 py-12 md:py-20 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-red-100 text-red-800 px-4 py-1.5 rounded-full font-bold text-sm">
+                    <i class="fa-solid fa-check-circle text-red-600"></i>
+                    <span>Official National Registry & Robocall Defense</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight">
+                    Stop Annoying Spam & Scam Calls <span class="text-red-600 underline">For Good.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-medium leading-relaxed">
+                    Designed specifically for seniors and families. We help register your number with the National Do Not Call List and sweep scam databases—keeping your phone peaceful.
+                </p>
+
+                <!-- Hero Feature Cards -->
+                <div class="grid sm:grid-cols-2 gap-4 py-2">
+                    <div class="bg-white p-4 rounded-xl border-2 border-gray-200 flex items-start space-x-3 shadow-sm">
+                        <i class="fa-solid fa-user-shield text-red-600 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-900">National DNC Setup</h4>
+                            <p class="text-sm text-gray-600">Legal protection against telemarketers</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border-2 border-gray-200 flex items-start space-x-3 shadow-sm">
+                        <i class="fa-solid fa-ban text-red-600 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Scam Lead Sweep</h4>
+                            <p class="text-sm text-gray-600">Opt-out of commercial data broker lists</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <button onclick="openModal()" class="bg-red-600 hover:bg-red-700 text-white font-black text-xl md:text-2xl px-8 py-5 rounded-xl shadow-xl hover:shadow-2xl focus-ring transition text-center">
+                        Activate Protection for $10/mo
+                    </button>
+                    <div class="text-sm text-gray-600 text-center sm:text-left">
+                        <p class="font-bold text-gray-800"><i class="fa-solid fa-lock text-green-600"></i> No Long-Term Contracts</p>
+                        <p>30-Day Money-Back Guarantee</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Interactive Status Card -->
+            <div class="md:col-span-5">
+                <div class="bg-white rounded-2xl shadow-2xl border-4 border-red-600 p-6 md:p-8 relative">
+                    <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 font-black text-xs px-3 py-1.5 rounded-lg shadow uppercase">
+                        Senior Preferred
+                    </div>
+                    <div class="text-center space-y-4">
+                        <div class="w-20 h-20 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto text-3xl font-black">
+                            <i class="fa-solid fa-phone-slash"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-gray-900">Protection Status: ACTIVE</h3>
+                        <div class="bg-gray-50 p-4 rounded-xl text-left space-y-3 border border-gray-200">
+                            <div class="flex justify-between items-center text-sm font-bold">
+                                <span>FTC Registry Status:</span>
+                                <span class="text-green-600"><i class="fa-solid fa-check"></i> Verification Ready</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm font-bold">
+                                <span>Carrier Network Filter:</span>
+                                <span class="text-green-600"><i class="fa-solid fa-check"></i> Active Monitoring</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm font-bold">
+                                <span>Data Broker Removal:</span>
+                                <span class="text-green-600"><i class="fa-solid fa-check"></i> Sweeping Lists</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 font-medium">Protecting thousands of senior landlines & mobile phones nationwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Spam Exposure Evaluator -->
+    <section id="evaluator" class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Check Your Phone's Spam Exposure Risk</h2>
+            <p class="text-lg text-gray-600 mb-8">Answer 2 simple questions to see how vulnerable your number is to robocallers.</p>
+            
+            <div class="bg-gray-50 border-2 border-red-200 rounded-2xl p-6 md:p-8 text-left shadow-lg space-y-6">
+                <div>
+                    <label class="block text-lg font-bold text-gray-800 mb-2">1. How many unknown or unwanted calls do you receive daily?</label>
+                    <select id="eval-calls" class="w-full text-lg p-4 border-2 border-gray-300 rounded-xl focus-ring bg-white">
+                        <option value="1">1 to 3 calls per day (Low Exposure)</option>
+                        <option value="3">4 to 8 calls per day (Moderate Exposure)</option>
+                        <option value="8">9+ calls per day (High Exposure)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-lg font-bold text-gray-800 mb-2">2. Have you ever entered your number online for Medicare or insurance quotes?</label>
+                    <select id="eval-online" class="w-full text-lg p-4 border-2 border-gray-300 rounded-xl focus-ring bg-white">
+                        <option value="yes">Yes / I'm Not Sure</option>
+                        <option value="no">No, Never</option>
+                    </select>
+                </div>
+                <button onclick="calculateRisk()" class="w-full bg-red-600 hover:bg-red-700 text-white font-black text-xl py-4 rounded-xl shadow-lg transition">
+                    Evaluate My Risk Level
+                </button>
+
+                <div id="eval-result" class="hidden p-6 rounded-xl bg-red-100 border-2 border-red-400 text-center space-y-3">
+                    <h4 class="text-2xl font-black text-red-900" id="risk-title">High Risk Exposure Detected!</h4>
+                    <p class="text-red-800 font-medium text-lg" id="risk-desc">Your number is likely actively circulated across commercial telemarketer databases.</p>
+                    <button onclick="openModal()" class="bg-red-600 text-white font-extrabold text-lg px-8 py-3 rounded-lg shadow hover:bg-red-700 transition">
+                        Start $10/mo Protection Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">How CallShield Protects You</h2>
+            <p class="text-xl text-gray-600 mb-12">Three simple steps to restore peace and quiet to your home.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200 space-y-4">
+                    <div class="w-16 h-16 bg-red-600 text-white font-black text-2xl rounded-2xl flex items-center justify-center mx-auto">1</div>
+                    <h3 class="text-2xl font-bold text-gray-900">Enter Your Phone Number</h3>
+                    <p class="text-gray-600 leading-relaxed">Provide your landline or mobile phone number during our secure checkout process.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200 space-y-4">
+                    <div class="w-16 h-16 bg-red-600 text-white font-black text-2xl rounded-2xl flex items-center justify-center mx-auto">2</div>
+                    <h3 class="text-2xl font-bold text-gray-900">Automated List Removal</h3>
+                    <p class="text-gray-600 leading-relaxed">We guide your official FTC National DNC verification and trigger sweeps across commercial lead databases.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200 space-y-4">
+                    <div class="w-16 h-16 bg-red-600 text-white font-black text-2xl rounded-2xl flex items-center justify-center mx-auto">3</div>
+                    <h3 class="text-2xl font-bold text-gray-900">Enjoy Quiet Days</h3>
+                    <p class="text-gray-600 leading-relaxed">Experience a dramatic reduction in telemarketing calls for just $10 a month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-xl text-gray-600 mb-12">No contracts. No hidden fees. Cancel anytime.</p>
+
+            <div class="bg-white rounded-3xl shadow-2xl border-4 border-red-600 max-w-lg mx-auto overflow-hidden">
+                <div class="bg-red-600 text-white py-6">
+                    <h3 class="text-2xl font-black uppercase tracking-wider">Senior Protection Plan</h3>
+                    <div class="text-5xl font-black mt-2">$10 <span class="text-xl font-medium">/ month</span></div>
+                </div>
+                <div class="p-8 space-y-6 text-left">
+                    <ul class="space-y-4 text-lg font-bold text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
+                            <span>National Do Not Call List Setup & Verification</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
+                            <span>Continuous Data Broker Lead Opt-Out Sweeps</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
+                            <span>Protection for Home Landlines & Cell Phones</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
+                            <span>US-Based Customer Phone & Email Support</span>
+                        </li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full bg-red-600 hover:bg-red-700 text-white font-black text-2xl py-5 rounded-xl shadow-xl focus-ring transition">
+                        Start $10/mo Protection
+                    </button>
+                    <p class="text-center text-xs text-gray-500 font-semibold">Protected by our 30-Day Money-Back Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers / Insurance Broker Section -->
+    <section id="careers" class="py-16 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-red-900 text-white rounded-3xl p-8 md:p-12 grid md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-7 space-y-4">
+                    <span class="bg-red-700 text-white font-bold text-xs uppercase px-3 py-1 rounded-full">Insurance & Medicare Agents</span>
+                    <h2 class="text-3xl md:text-4xl font-black">Partner With CallShield as a Certified Broker</h2>
+                    <p class="text-lg text-red-100 font-medium">
+                        Help your senior clients stop scam calls while building a recurring revenue stream. Join our national agent network today.
+                    </p>
+                </div>
+                <div class="md:col-span-5 bg-white text-gray-900 p-6 rounded-2xl shadow-xl">
+                    <h4 class="text-xl font-bold mb-4 text-center">Apply for Broker Contracting</h4>
+                    <form onsubmit="submitBrokerApp(event)" class="space-y-4">
+                        <input type="text" placeholder="Full Name" required class="w-full p-3 border-2 border-gray-300 rounded-lg text-base">
+                        <input type="email" placeholder="NPN / Agency Email" required class="w-full p-3 border-2 border-gray-300 rounded-lg text-base">
+                        <input type="tel" placeholder="Phone Number" required class="w-full p-3 border-2 border-gray-300 rounded-lg text-base">
+                        <button type="submit" class="w-full bg-red-600 text-white font-bold text-lg py-3 rounded-lg hover:bg-red-700 transition">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left grid md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-shield-halved text-red-500 text-2xl"></i>
+                    <span class="text-2xl font-black">CallShield</span>
+                </div>
+                <p class="text-sm text-gray-400">Dedicated to helping seniors protect their phone lines from illegal scam calls and telemarketing clutter.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4 text-red-400">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#how-it-works" class="hover:text-white">How It Works</a></li>
+                    <li><a href="#pricing" class="hover:text-white">Pricing Tier ($10/mo)</a></li>
+                    <li><a href="#evaluator" class="hover:text-white">Spam Risk Evaluator</a></li>
+                    <li><a href="#careers" class="hover:text-white">Broker Network</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4 text-red-400">Legal & Federal</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="https://www.donotcall.gov" target="_blank" class="hover:text-white">FTC DoNotCall.gov</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4 text-red-400">Customer Support</h4>
+                <p class="text-sm text-gray-400 mb-2">Toll-Free: 1-800-555-SHIELD</p>
+                <p class="text-sm text-gray-400">Email: support@callshieldsenior.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            © 2026 CallShield Senior Protection Services. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Senior AI Assistant Floating Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="toggleChat()" class="bg-red-600 hover:bg-red-700 text-white p-4 rounded-full shadow-2xl flex items-center space-x-3 border-2 border-white focus-ring">
+            <i class="fa-solid fa-headset text-2xl"></i>
+            <span class="font-bold text-lg hidden sm:inline">Senior Help Assistant</span>
+        </button>
+
+        <div id="chat-window" class="hidden fixed bottom-24 right-6 w-96 bg-white rounded-2xl shadow-2xl border-4 border-red-600 overflow-hidden flex flex-col h-[450px]">
+            <div class="bg-red-600 text-white p-4 flex justify-between items-center font-bold">
+                <span><i class="fa-solid fa-robot mr-2"></i> CallShield Assistant</span>
+                <button onclick="toggleChat()" class="text-white text-xl">&times;</button>
+            </div>
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 bg-gray-50 text-sm">
+                <div class="bg-red-100 text-red-900 p-3 rounded-xl max-w-[85%] font-medium">
+                    Hello! I am your CallShield Assistant. Ask me any question about how we protect your phone for $10/month!
+                </div>
+            </div>
+            <div class="p-3 bg-white border-t border-gray-200 flex gap-2">
+                <input type="text" id="chat-input" placeholder="Type a question..." class="flex-1 p-2 border border-gray-300 rounded-lg text-sm">
+                <button onclick="sendChatMessage()" class="bg-red-600 text-white px-4 py-2 rounded-lg font-bold text-sm">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stripe Checkout Modal -->
+    <div id="checkout-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 border-4 border-red-600 shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-2xl font-black text-gray-900 mb-2">Activate $10/mo Protection</h3>
+            <p class="text-sm text-gray-600 mb-6">Enter details below to enroll your phone line.</p>
+            
+            <form onsubmit="handleCheckout(event)" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Senior's Full Name</label>
+                    <input type="text" required placeholder="e.g. Mary Johnson" class="w-full p-3 border-2 border-gray-300 rounded-lg text-lg">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Phone Number to Protect</label>
+                    <input type="tel" required placeholder="(555) 000-0000" class="w-full p-3 border-2 border-gray-300 rounded-lg text-lg">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Notification Email</label>
+                    <input type="email" required placeholder="caregiver@gmail.com" class="w-full p-3 border-2 border-gray-300 rounded-lg text-lg">
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 text-center font-bold text-gray-800">
+                    Total Due Today: <span class="text-red-600 text-xl font-black">$10.00</span> / month
+                </div>
+
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-black text-xl py-4 rounded-xl shadow-lg transition">
+                    Proceed to Bank-Grade Checkout
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Handlers -->
+    <script>
+        function openModal() { document.getElementById('checkout-modal').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('checkout-modal').classList.add('hidden'); }
+        function toggleChat() { document.getElementById('chat-window').classList.toggle('hidden'); }
+
+        function calculateRisk() {
+            document.getElementById('eval-result').classList.remove('hidden');
+        }
+
+        function handleCheckout(e) {
+            e.preventDefault();
+            alert("Redirecting to PCI-Compliant Stripe $10/mo Checkout Session...");
+            closeModal();
+        }
+
+        function submitBrokerApp(e) {
+            e.preventDefault();
+            alert("Broker Contracting Application Received! Our network team will reach out within 24 hours.");
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            const messages = document.getElementById('chat-messages');
+            if(!input.value.trim()) return;
+
+            const userText = input.value;
+            messages.innerHTML += `<div class="bg-gray-200 text-gray-900 p-3 rounded-xl ml-auto max-w-[85%] font-medium">${userText}</div>`;
+            input.value = '';
+            messages.scrollTop = messages.scrollHeight;
+
+            messages.innerHTML += `<div class="bg-red-100 text-red-900 p-3 rounded-xl max-w-[85%] font-medium" id="temp-bot">Thinking...</div>`;
+            messages.scrollTop = messages.scrollHeight;
+
+            setTimeout(() => {
+                const temp = document.getElementById('temp-bot');
+                if(temp) temp.remove();
+                messages.innerHTML += `<div class="bg-red-100 text-red-900 p-3 rounded-xl max-w-[85%] font-medium">CallShield Senior helps you register with the FTC Do Not Call Registry and opts your number out of public data broker call lists for just $10/month!</div>`;
+                messages.scrollTop = messages.scrollHeight;
+            }, 800);
+        }
+    </script>
+</body>
+</html>
