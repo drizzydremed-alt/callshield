@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallShield Senior | Secure Call Protection for Seniors</title>
+    <style>
+        :root { --primary: #004a99; --secondary: #f4f8fb; --text: #333; --accent: #ffcc00; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--text); background-color: white; line-height: 1.6; }
+        
+        /* Navigation */
+        header { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; position: fixed; width: 100%; top: 0; z-index: 1000; box-sizing: border-box;}
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+        nav ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 2rem; }
+        nav a { text-decoration: none; color: var(--text); font-weight: 500; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: var(--primary); }
+        .cta-btn { background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .cta-btn:hover { background: #003a7a; }
+
+        /* Hero Section */
+        .hero { background: var(--secondary); padding: 8rem 2rem 4rem; display: flex; align-items: center; gap: 4rem; max-width: 1200px; margin: 0 auto; }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+        .hero-text p { font-size: 1.25rem; margin-bottom: 2rem; }
+        .hero-image { flex: 1; text-align: right; }
+        .hero-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        /* General Sections */
+        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { text-align: center; color: var(--primary); font-size: 2.25rem; margin-bottom: 3rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: var(--secondary); padding: 2rem; border-radius: 8px; text-align: center; }
+        .card h3 { color: var(--primary); margin-top: 0; }
+
+        /* Footer */
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding-top: 6rem; }
+            .hero-image { text-align: center; }
+            nav ul { gap: 1rem; font-size: 0.9rem;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">CallShield Senior</a>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">How It Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="contact.html" class="cta-btn">Get Started</a>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Peace of mind, one call at a time.</h1>
+        <p>CallShield Senior protects your loved ones from scam calls, fraud, and aggressive telemarketers. Simple setup, powerful protection.</p>
+        <a href="about.html" class="cta-btn">Learn How It Protects</a>
+    </div>
+    <div class="hero-image">
+        <!-- AI Photo: Serene senior relaxing at home with smartphone -->
+        <img src="https://image.pollinations.ai/prompt/portrait_of_a_smiling_serene_senior_woman_holding_a_modern_smartphone_with_both_hands_looking_relaxed_at_home_warm_lighting_soft_focus_background_high_detail_photorealistic" alt="Senior smiling holding a smartphone">
+    </div>
+</section>
+
+<section id="features">
+    <h2>Complete Scam Protection</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Instant Block</h3>
+            <p>Automatically blocks known fraudulent numbers from our global database before the phone even rings.</p>
+        </div>
+        <div class="card">
+            <h3>Scam Analysis</h3>
+            <p>Uses AI to analyze incoming unknown calls in real-time for patterns common in phishing and elderly fraud.</p>
+        </div>
+        <div class="card">
+            <h3>Family Alerts</h3>
+            <p>Optionally notify family members if a suspected high-risk scam call was attempted.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 CallShield Senior. Protected by Advanced AI.</p>
+</footer>
+
+</body>
+</html>
