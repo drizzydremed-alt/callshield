@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works | CallShield Senior</title>
+    <style>
+        :root { --primary: #004a99; --secondary: #f4f8fb; --text: #333; --accent: #ffcc00; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--text); background-color: white; line-height: 1.6; }
+        header { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; position: fixed; width: 100%; top: 0; z-index: 1000; box-sizing: border-box;}
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+        nav ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 2rem; }
+        nav a { text-decoration: none; color: var(--text); font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--primary); }
+        .cta-btn { background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .cta-btn:hover { background: #003a7a; }
+        
+        main { padding: 8rem 2rem 4rem; max-width: 1000px; margin: 0 auto; }
+        h1 { color: var(--primary); font-size: 2.5rem; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 0.5rem;}
+        h2 { color: var(--primary); margin-top: 2rem; }
+        .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem; }
+        .about-grid img { max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { main { padding-top: 6rem; } .about-grid { grid-template-columns: 1fr; text-align: center; } nav ul { gap: 1rem; font-size: 0.9rem;} }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">CallShield Senior</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">How It Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="contact.html" class="cta-btn">Get Started</a>
+</header>
+
+<main>
+    <h1>Simple Protection, Powerful Results.</h1>
+    
+    <div class="about-grid">
+        <div class="text">
+            <h2>The CallShield Process</h2>
+            <p>Our technology is designed from the ground up to be effortless for seniors. Unlike complex blocking apps that require constant management, CallShield operates seamlessly at the network level.</p>
+            <p>When an unknown call originates, it is instantly cross-referenced against our proprietary database of fraud syndicates, robotic dialers, and aggressive telemarketers. If a match is confirmed, the call is terminated silently.</p>
+            <p>For ambiguous calls, our advanced AI analyzes voice patterns in milliseconds to provide a smart safety rating, giving families total peace of mind.</p>
+        </div>
+        <div class="image">
+            <!-- AI Photo: Tech dashboard showing call blocking metrics -->
+            <img src="https://image.pollinations.ai/prompt/professional_modern_software_dashboard_interface_displaying_real-time_statistics_title_reads_CALL_BLOCKING_SUMMARY_green_and_blue_graphs_showing_blocked_scam_calls_interface_mockup_clean_design_digital_rendered" alt="CallShield Technology Dashboard">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 CallShield Senior. Peace of mind.</p>
+</footer>
+
+</body>
+</html>
